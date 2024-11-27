@@ -1,7 +1,8 @@
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import { JSX, DetailedHTMLProps, HTMLAttributes, DO_NOT_USE_OR_YOU_WILL_BE_FIRED_CALLBACK_REF_RETURN_VALUES, RefObject, ReactNode } from 'react';
+import { Omit, BsPrefixProps } from 'react-bootstrap/esm/helpers';
+import Modal, { ModalProps } from 'react-bootstrap/Modal';
 
-function MyVerticallyCenteredModal(props:any) {
+function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref"> & { ref?: ((instance: HTMLDivElement | null) => void | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_CALLBACK_REF_RETURN_VALUES[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_CALLBACK_REF_RETURN_VALUES]) | RefObject<HTMLDivElement> | null | undefined; }, BsPrefixProps<"div"> & ModalProps> & BsPrefixProps<"div"> & ModalProps & { children?: ReactNode | undefined; }) {
   return (
     <Modal
       {...props}

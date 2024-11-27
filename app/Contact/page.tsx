@@ -5,7 +5,6 @@ import Contact from "../assests/contactUs.png";
 
 export default function Privacy() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
-  const [modalShow, setModalShow] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth >= 768); // Check if the screen is large enough (>= 768px)
